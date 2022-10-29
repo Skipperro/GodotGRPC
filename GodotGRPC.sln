@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GodotGRPC", "GodotGRPC.csproj", "{742E465C-8F60-4AA0-BC97-32EEF5BA0567}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{742E465C-8F60-4AA0-BC97-32EEF5BA0567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{742E465C-8F60-4AA0-BC97-32EEF5BA0567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{742E465C-8F60-4AA0-BC97-32EEF5BA0567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{742E465C-8F60-4AA0-BC97-32EEF5BA0567}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
