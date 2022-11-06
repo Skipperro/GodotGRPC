@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "pixelstreaminggrpc";
+
+package pixelstreaminggrpc;
+
+service PixelStreamingGrpcService {
+  // Create a communication tunnel between the client and the pixelstreaming server.
+  rpc RunPixelStreaming (stream ControlInput) returns (stream FrameData);
+}
+
+// The message from client containing all forms of user inputs like raw mouse movement or button triggers.
+message ControlInput {
+  string guid = 1;
+  string command = 2;
+  string payload = 3;
+}
+
+// The message from server containing video and audio data for next frame plus performance metrics.
+message FrameData {
+  bytes videoData = 1;
+  bytes audioData = 2;
+  int64 frameNumber = 3;
+  int32 frameProcessingTime = 4;
+}
